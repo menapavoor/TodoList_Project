@@ -9,4 +9,5 @@ gcc src/todo.c -o todo
 ## Features
 - Add tasks
 - View tasks
+- Completed tasks
 - Delete tasks

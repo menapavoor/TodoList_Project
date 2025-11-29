@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "../include/todo.h"   // include your header file
+#include "../include/todo.h"  
 
 char tasks[MAX_TASKS][MAX_LENGTH];
 int taskCount = 0;
@@ -12,7 +12,7 @@ void addTask() {
         return;
     }
     printf("Enter new task: ");
-    getchar();
+    getchar();   // consume leftover newline
     fgets(tasks[taskCount], MAX_LENGTH, stdin);
     tasks[taskCount][strcspn(tasks[taskCount], "\n")] = '\0';
     taskCount++;
